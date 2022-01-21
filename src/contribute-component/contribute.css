@@ -1,0 +1,119 @@
+.contribute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.contribute .donateBtn {
+    height: 5rem;
+    width: 12rem;
+}
+.contribute .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
+}
+
+.contribute .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    height: 25rem;
+    width: 45%;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.card {
+    margin: 3rem;
+}
+.cards-container {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.lowerSection {
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+.lowerSectionTitle {
+    padding-top: 3rem;
+}
+
+.upperSection {
+    width: 80%;
+}
+
+.leftUpper {
+    flex: 1;
+    margin: 1rem;
+}
+.rightUpper {
+    flex: 1;
+    margin: 1rem;
+}
+.rightUpper p {
+    text-align: left;
+}
+
+.footer {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.leftUpper img {
+    width: 500px;
+    height: auto;
+}
+
+@media screen and (min-width: 63.25em) {
+    .upperSection {
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 63.25em) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .leftUpper img {
+        width: 80vw;
+        height: auto;
+    }
+    .leftUpper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: unset;
+        margin: unset;
+    }
+}

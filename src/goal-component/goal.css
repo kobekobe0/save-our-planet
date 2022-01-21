@@ -1,0 +1,79 @@
+.upperGoal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+
+    background-image: url('https://images.unsplash.com/photo-1488956322016-1e7554142097?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.upperGoal h1 {
+    color: rgb(221, 221, 221);
+}
+
+.lowerGoal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5rem;
+}
+.lowerGoal .cardGoal {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 2rem;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+.lowerGoal .cardGoal p {
+    padding: 2rem;
+}
+.lowerGoal .cardGoal h2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.lowerGoal .cardGoal:nth-child(even) img {
+    order: 2;
+}
+.lowerGoal .cardGoal:nth-child(even) p {
+    text-align: right;
+}
+.lowerGoal .cardGoal:nth-child(odd) p {
+    text-align: left;
+}
+.lowerGoal .cardGoal:nth-child(even) h2 {
+    text-align: right;
+}
+.lowerGoal .cardGoal:nth-child(odd) h2 {
+    text-align: left;
+}
+.lowerGoal .cardGoal img {
+    width: 350px;
+}
+
+@media screen and (max-width: 63.25em) {
+    .lowerGoal .cardGoal {
+        display: block;
+    }
+    .lowerGoal .cardGoal img {
+        width: 80vw;
+    }
+    .lowerGoal .cardGoal div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .lowerGoal .cardGoal:nth-child(even) p {
+        text-align: left;
+    }
+}
